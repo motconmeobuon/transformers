@@ -16,7 +16,7 @@ cat train.txt dev.txt test.txt | cut -d " " -f 2 | grep -v "^$"| sort | uniq > l
 export OUTPUT_DIR=germeval-model
 export BATCH_SIZE=16
 export NUM_EPOCHS=75
-export SAVE_STEPS=20000
+export SAVE_STEPS=18000
 export SEED=1
 
 python3 run_ner.py \
